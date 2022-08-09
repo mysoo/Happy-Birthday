@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/img/happyBdayLogo.JPG";
 
 const NavibarSection = styled.div`
   position: relative;
@@ -50,11 +51,14 @@ export default function Navibar() {
       <Bar>
         {/* 로고 */}
         <LogoBox>
-          <NavLink style={{ height: "100%", width: "60vw" }} to="/">
+          <NavLink
+            style={{ height: "100%", width: "60vw" }}
+            to="/Happy-Birthday/"
+          >
             <img
               style={{ height: "100%", width: "20vw" }}
               alt="logo"
-              src="img/happyBdayLogo.jpg"
+              src={logo}
             />
           </NavLink>
         </LogoBox>
@@ -62,7 +66,10 @@ export default function Navibar() {
         {/* 메뉴 */}
         <PagesBox>
           {/* <div> */}
-          <NavLink style={{ textDecorationLine: "none" }} to="/cake">
+          <NavLink
+            style={{ textDecorationLine: "none", hover: "black" }}
+            to="/cake"
+          >
             Cake
           </NavLink>
           <NavLink style={{ textDecorationLine: "none" }} to="/gift">

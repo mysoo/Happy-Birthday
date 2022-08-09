@@ -81,7 +81,7 @@ export default function CakePage() {
           ></iframe>
         </div> */}
         <p>
-          <a href="https://giphy.com/embed/Lkw7QvEHjNeiHN2poQ">via GIPHY</a>
+          <a href="https://giphy.com/embed/Lkw7QvEHjNeiHN2poQ">vccia GIPHY</a>
         </p>
       </Ment>
 
