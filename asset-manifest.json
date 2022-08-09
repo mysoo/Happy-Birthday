@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Happy-Birthday/static/css/main.e30f0a45.css",
+    "main.js": "/Happy-Birthday/static/js/main.86000332.js",
+    "static/js/787.77d6f603.chunk.js": "/Happy-Birthday/static/js/787.77d6f603.chunk.js",
+    "static/media/KoPubWorld Batang Medium.ttf": "/Happy-Birthday/static/media/KoPubWorld Batang Medium.0282e6e15da8a98240ee.ttf",
+    "index.html": "/Happy-Birthday/index.html",
+    "main.e30f0a45.css.map": "/Happy-Birthday/static/css/main.e30f0a45.css.map",
+    "main.86000332.js.map": "/Happy-Birthday/static/js/main.86000332.js.map",
+    "787.77d6f603.chunk.js.map": "/Happy-Birthday/static/js/787.77d6f603.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e30f0a45.css",
+    "static/js/main.86000332.js"
+  ]
+}
