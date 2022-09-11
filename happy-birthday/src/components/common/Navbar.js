@@ -44,6 +44,19 @@ const PagesBox = styled.div`
   text-decoration-line: none;
   font-size: 3vh;
 `;
+const StyledLink = styled(NavLink)`
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration-line: none;
+  color: #e5ccff;
+  :hover {
+    color: #b266ff;
+  }
+  .active {
+    color: #b266ff;
+  }
+`;
 
 export default function Navibar() {
   return (
@@ -56,7 +69,7 @@ export default function Navibar() {
             to="/Happy-Birthday/"
           >
             <img
-              style={{ height: "100%", width: "20vw" }}
+              style={{ height: "120px", width: "120px" }}
               alt="logo"
               src={logo}
             />
@@ -66,18 +79,29 @@ export default function Navibar() {
         {/* 메뉴 */}
         <PagesBox>
           {/* <div> */}
-          <NavLink
-            style={{ textDecorationLine: "none", hover: "black" }}
+          <StyledLink
+            activeClassName="active"
+            //  style={({ isActive }) =>
+            //  (isActive ? {color: 'red'} : {color: 'blue'})}
+            // style={{ textDecorationLine: "none", hover: "black" }}
             to="/cake"
           >
             Cake
-          </NavLink>
-          <NavLink style={{ textDecorationLine: "none" }} to="/gift">
+          </StyledLink>
+          <StyledLink
+            style={{ textDecorationLine: "none" }}
+            activeClassName="active"
+            to="/gift"
+          >
             Gift
-          </NavLink>
-          <NavLink style={{ textDecorationLine: "none" }} to="/letter">
+          </StyledLink>
+          <StyledLink
+            style={{ textDecorationLine: "none" }}
+            activeClassName="active"
+            to="/letter"
+          >
             Letter
-          </NavLink>
+          </StyledLink>
           {/* </div> */}
         </PagesBox>
       </Bar>
