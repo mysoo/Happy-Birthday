@@ -126,7 +126,7 @@ export default function LetterPage() {
             background: "#9933ff",
             color: "white",
             border: "none",
-            borderRadius: "100px",
+            borderRadius: "30px",
             cursor: "pointer",
           }}
           type="button"
