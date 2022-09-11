@@ -47,7 +47,8 @@ const PagesBox = styled.div`
 const StyledLink = styled(NavLink)`
   box-sizing: border-box;
   font-weight: 600;
-  font-size: 30px;
+  // font-size: 24px;
+  font-size: 1em;
   text-decoration-line: none;
   color: #e5ccff;
   :hover {
