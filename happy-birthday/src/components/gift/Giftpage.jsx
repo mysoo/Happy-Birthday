@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import giftBackground from "../../assets/img/giftBackground.jpg";
 const Section = styled.div`
   position: absolute;
   box-sizing: border-box;
@@ -15,6 +16,15 @@ const Section = styled.div`
   //   border: 1px solid RED;
   overflow: hidden;
   padding: 0 8% 0 8%;
+  // animation: up-down 1.4s infinite ease-in-out alternate;
+  // @keyframes up-down {
+  //   from {
+  //     transform: translatex(0px) translatey(0px);
+  //   }
+  //   to {
+  //     transform: rotate(15deg);
+  //   }
+  // }
 `;
 
 const Giftbox1 = styled.div`
@@ -26,6 +36,15 @@ const Giftbox1 = styled.div`
   width: 20%;
   height: 80%;
   //   border: 1px solid gray;
+  animation: up-dow 0.4s infinite ease-in-out alternate;
+  @keyframes up-dow {
+    from {
+      transform: translatex(0px) translatey(0px);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+  }
 `;
 const Giftbox2 = styled.div`
   box-sizing: border-box;
@@ -37,6 +56,15 @@ const Giftbox2 = styled.div`
   width: 20%;
   height: 80%;
   //   border: 1px solid gray;
+  animation: up-dow 0.35s infinite ease-in-out alternate;
+  @keyframes up-dow {
+    from {
+      transform: translatex(0px) translatey(0px);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+  }
 `;
 const Giftbox3 = styled.div`
   box-sizing: border-box;
@@ -48,6 +76,15 @@ const Giftbox3 = styled.div`
   width: 20%;
   height: 80%;
   //   border: 1px solid gray;
+  animation: up-dow 0.4s infinite ease-in-out alternate;
+  @keyframes up-dow {
+    from {
+      transform: translatex(0px) translatey(0px);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+  }
 `;
 
 const Content = styled.div`
@@ -87,6 +124,12 @@ const StyledLink = styled(Link)`
 `;
 
 export default function GiftPage() {
+  const noGift = () => {
+    alert("꽝!!!!!");
+  };
+  const yesGift = () => {
+    alert("나 만나야 줄거지롱~");
+  };
   return (
     <>
       <Section>
@@ -94,18 +137,21 @@ export default function GiftPage() {
           <CardGiftcardIcon
             color="secondary"
             sx={{ fontSize: "13vw", cursor: "pointer" }}
+            onClick={noGift}
           />
         </Giftbox1>
         <Giftbox2>
           <CardGiftcardIcon
             color="secondary"
             sx={{ fontSize: "13vw", cursor: "pointer" }}
+            onClick={noGift}
           />
         </Giftbox2>
         <Giftbox3>
           <CardGiftcardIcon
             color="secondary"
             sx={{ fontSize: "13vw", cursor: "pointer" }}
+            onClick={yesGift}
           />
         </Giftbox3>
       </Section>
