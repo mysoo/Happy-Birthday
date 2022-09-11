@@ -60,7 +60,7 @@ export default function LetterPage() {
       <div ref={node}>
         <input
           style={{
-            width: "100px",
+            width: "200px",
             height: "50px",
             fontSize: "20px",
             background: "#9933ff",

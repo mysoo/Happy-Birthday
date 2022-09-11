@@ -128,6 +128,7 @@ export default function GiftPage() {
     alert("꽝!!!!!");
   };
   const yesGift = () => {
+    alert("선물!!");
     alert("나 만나야 줄거지롱~");
   };
   return (
