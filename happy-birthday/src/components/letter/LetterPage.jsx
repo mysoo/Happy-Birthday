@@ -44,8 +44,8 @@ export default function LetterPage() {
   }, [modalOpen]);
 
   const handleClick = (event) => {
-    const enterPW = prompt("비밀번호를 입력하세요");
-    if (enterPW === "18") {
+    const enterPW = prompt("비밀번호를 입력하세요", "좋아한다고 했던 숫자!!");
+    if (enterPW === "2") {
       setModalOpen(true);
       alert("정답!!");
     } else {
